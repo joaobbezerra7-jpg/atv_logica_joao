@@ -47,9 +47,13 @@
 <h4>Lista objeto literal</h4>
 
 <div id="div-listaObj-for"></div>
+<hr>
+ 
+
+
 <script>
 
-    
+
 
     // CONTADOR/ACUMULADOR
 // const inputNum = document.querySelector('#num');
@@ -124,6 +128,30 @@ const pessoas = [
   { nome: 'Chicó', idade: 36, renda: 100 },
   { nome: 'João Grilo', idade: 37, renda: 80 }
 ];
+
+//MANIPULANDO ARRAY
+//ADICIONAR ELEMENTOS NO ARRAY
+pessoas.push({nome: 'Magnólia', idade: 31, renda: 3500})
+pessoas.unshift({nome: 'Joerdison', idade: 38, renda: 10000})
+
+//SPLICE ADICIONA EM UMA POSIÇÃO SEM EXCLUIR UM ELEMENTO
+pessoas.splice(3, 0, {nome: 'Extraterrestre', idade: 250, renda: 0.50})
+
+//SPLICE ADICIONA EM UMA POSIÇÃO E NESSE EXEMPLO EXCLUI MAIS 
+//DOIS ELEMENTOS A PARTIR DA POSIÇÃO(ÍNDICE) INFORMADA
+pessoas.splice(3, 2, {nome: 'Extraterrestre', idade: 250, renda: 0.50})
+
+//SPLICE EXCLUI UMA POSIÇÃO E NESSE EXEMPLO EXCLUI APENAS O 
+//ELEMENTO DA POSIÇÃO(ÍNDICE) INFORMADA
+pessoas.splice(1, 1)
+
+//SPLICE EXCLUI DOIS ELEMENTOS A PARTIR DA POSIÇÃO(ÍNDICE) 
+//INFORMADA
+pessoas.splice(2, 2)
+
+// excluindo ultimo elemento
+pessoas.pop()
+
 
 // LISTANDO OBJETO LITERAL PELO FOR
 const divListaObjFor = document.querySelector('#div-listaObj-for');
