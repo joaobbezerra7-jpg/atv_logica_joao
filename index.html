@@ -44,10 +44,13 @@
 
 </div>
 <hr>
-<h4>Lista objeto literal</h4>
+<h4>Lista objeto literal for</h4>
 
 <div id="div-listaObj-for"></div>
 <hr>
+<h4>Lista objeto literal for of</h4>
+<div id="div-listaObj-forof"></div>
+
  
 
 
@@ -103,6 +106,8 @@ for (let i = 0; i < 5; i++) {
     divArray.innerHTML += `${presentes[i]}, `
     
 }
+
+
 const divForIn = document.querySelector('#div-for-in')
 
 for (let posicao in presentes) {
@@ -115,6 +120,7 @@ for (const obj of presentes) {
     divForof.innerHTML += ` ${obj}`
 }
 
+// Foreach
 const divForEach = document.querySelector("#div-foreach")
 presentes.forEach((elemento, i) => {
     divForEach.innerHTML += `${i} - ${elemento} <br>`
@@ -160,6 +166,13 @@ for (i = 0; i < pessoas.length; i++) {
     divListaObjFor.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade} R$ ${pessoas[i].renda.toFixed(2).replace('.', ',')} <br>`;
 }
 
+// Listando com for of
+const divListaObjForof = document.querySelector('#div-listaObj-forof');
+
+
+for (const pessoa of pessoas) {
+    divListaObjForof.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade} R$ ${pessoas[i].renda.toFixed(2).replace('.', ',')} <br>`;
+}
 
 </script>
 </body>
