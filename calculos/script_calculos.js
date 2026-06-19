@@ -18,6 +18,6 @@ const calculoPercentual = (valor) => {
     return valorCalculado;
 }
 
-console.log(calculoPercentual(9000));
+
 
 export{calculoPercentual}

@@ -1,6 +1,7 @@
 import { calculoPercentual } from "../calculos/script_calculos.js";
 
 
+
 // function soma(a,b) {
 //     return a + b
 // }
@@ -78,7 +79,7 @@ import { calculoPercentual } from "../calculos/script_calculos.js";
 
 
 
-
+console.log(calculoPercentual(700));
 
 
 
