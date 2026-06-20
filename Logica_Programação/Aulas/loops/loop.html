@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetiçoes</title>
+</head>
+<body>
+    <h1>Repetições</h1>
+    <hr>
+    <h3>For</h3>
+     <h6>Repetir Frases</h6>
+
+ <label for="frase">Frase</label>
+<input type="text" name="frase" id="frase">
+<br>
+<br>
+<label for="num-repeticao">Número de repetição</label>
+<input type="text" name="num-repeticao" id="num-repeticao">
+<br>
+<br>
+<button id="btn-frase">Clique Aqui</button>
+
+
+<div id="div-frase"></div>
+    <hr>
+
+
+<h3>Lendo Array com For</h3>
+
+<div id="div-array">
+</div>
+
+<hr>
+<h3>Lendo Array com For Of</h3>
+
+<div id="div-forof">
+</div>
+
+<hr>
+
+<h3>For in</h3>
+
+<div id="div-for-in">
+</div>
+
+<hr>
+
+<h3>For EACH</h3>
+<div id="div-foreach">
+
+</div>
+
+<script>
+    // Repetir frases
+    // const inputFrase = document.querySelector('#frase');
+// const inputNumRepeticao = document.querySelector('#num-repeticao');
+// const btnFrase = document.querySelector('#btn-frase');
+// const divFrase = document.querySelector('#div-frase');
+
+// btnFrase.addEventListener('click', () => {
+//     const frase = inputFrase.value;
+//     const repeticoes = Number(inputNumRepeticao.value);
+    
+//     divFrase.innerHTML = ''; 
+
+//     for (let i = 0; i < repeticoes; i++) {
+//         divFrase.innerHTML += `<p>${frase}</p>`;
+//     }
+// });
+
+
+
+//COLEÇÃO DE DADOS - ARRAY
+// const presentes = ['Bicicleta', 'Celular', 'Camisa do Mengão', 'Pulseira', 'Tênis Adidas']
+
+// const divArray = document.querySelector('#div-array');
+
+// for (let i = 0; i < 5; i++) {
+//     divArray.innerHTML += `${presentes[i]}, `
+// }
+
+
+// Lendo dados com ForOF
+// const divForof = document.querySelector("#div-forof");
+
+// for (const obj of presentes) {
+//     divForof.innerHTML += ` ${obj}`
+// }
+
+
+// Lendo dados com ForIn
+// const divForIn = document.querySelector('#div-for-in')
+
+// for (let posicao in presentes) {
+//    divForIn.innerHTML += `${presentes[posicao]}, `
+// }
+
+
+//Lendo com for each
+// const divForEach = document.querySelector("#div-foreach")
+// presentes.forEach((elemento, i) => {
+//     divForEach.innerHTML += `${i} - ${elemento} <br>`
+// })
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        h3 {
+            text-align: center;
+        }
+
+        input, a {
+            display: block;
+        }
+
+
+        #div-form {
+            border: 3px solid;
+            width: 300px;
+            padding: 30px;
+            position: relative;
+            left: 300px;
+            top: 100px;
+        }
+
+        #div-resultado {
+            border: solid 2px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h6>Veja outras atividades</h6>
+    <a href="atv1.html">Atividade 1</a>
+    <a href="atv2.html">Atividade 2</a>
+    <a href="atv3.html">Atividade 3</a>
+    <a href="atv5.html">Atividade 5</a>
+    <a href="atv7.html">Atividade 7</a>
+    <a href="atv8.html">Atividade 8</a>
+    <a href="atv9.html">Atividade 9</a>
+    <hr>
+    <h1>Questão 6</h1>
+    <hr>
+    <h3>
+        Um endocrinologista deseja controlar a saúde de seus
+        pacientes e, para isto, se utiliza do Índice de Massa
+        Corporal (IMC). Sabendo-se que o IMC é calculado através
+        da seguinte fórmula:
+
+        Fazer um algoritmo que apresente o nome do paciente
+        e sua faixa de risco, baseando-se na seguinte
+        tabela:
+
+        IMC FAIXA DE RISCO
+        Abaixo de 20 abaixo do peso
+        A partir de 20 até 25 normal
+        A partir de 25 até 30 excesso de peso
+        A partir de 30 até 35 obesidade
+        Acima de 35 obesidade mórbida
+        </h5>
+        <div id="div-form">
+            <h3>Cálculo IMC</h3>
+
+            <form id="calculadora">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="p">Peso(KG)</label>
+                <input type="number" name="p" id="p">
+                <label for="altu">Altura (centimetros)</label>
+                <input type="number" name="altu" id="altu">
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+
+            </form>
+            <br>
+            <div id="div-resultado">
+
+            </div>
+        </div>
+        <script src="script.js">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+<h4>Lista objeto literal for</h4>
+<div id="div-listaObj-for"></div>
+<hr>
+<h4>Lista objeto literal for of</h4>
+<div id="div-listaObj-forof"></div>
+<hr>
+
+<script>
+    // COLEÇÃO DE OBJETOS LITERAIS - ARRAY
+const pessoas = [
+  { nome: 'Maria Flor', idade: 25, renda: 8500 },
+  { nome: 'Oberdan Souza', idade: 75, renda: 5000 },
+  { nome: 'Teoça', idade: 28, renda: 500 },
+  { nome: 'Chicó', idade: 36, renda: 100 },
+  { nome: 'João Grilo', idade: 37, renda: 80 }
+];
+
+//MANIPULANDO ARRAY
+//ADICIONAR ELEMENTOS NO ARRAY
+pessoas.push({nome: 'Magnólia', idade: 31, renda: 3500})
+pessoas.unshift({nome: 'Joerdison', idade: 38, renda: 10000})
+
+//SPLICE ADICIONA EM UMA POSIÇÃO SEM EXCLUIR UM ELEMENTO
+pessoas.splice(3, 0, {nome: 'Extraterrestre', idade: 250, renda: 0.50})
+
+//SPLICE ADICIONA EM UMA POSIÇÃO E NESSE EXEMPLO EXCLUI MAIS 
+//DOIS ELEMENTOS A PARTIR DA POSIÇÃO(ÍNDICE) INFORMADA
+pessoas.splice(3, 2, {nome: 'Extraterrestre', idade: 250, renda: 0.50})
+
+//SPLICE EXCLUI UMA POSIÇÃO E NESSE EXEMPLO EXCLUI APENAS O 
+//ELEMENTO DA POSIÇÃO(ÍNDICE) INFORMADA
+pessoas.splice(1, 1)
+
+//SPLICE EXCLUI DOIS ELEMENTOS A PARTIR DA POSIÇÃO(ÍNDICE) 
+//INFORMADA
+pessoas.splice(2, 2)
+
+// excluindo ultimo elemento
+pessoas.pop()
+
+
+// LISTANDO OBJETO LITERAL PELO FOR
+const divListaObjFor = document.querySelector('#div-listaObj-for');
+
+for (i = 0; i < pessoas.length; i++) {
+    divListaObjFor.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade} R$ ${pessoas[i].renda.toFixed(2).replace('.', ',')} <br>`;
+}
+
+// Listando com for of
+const divListaObjForof = document.querySelector('#div-listaObj-forof');
+
+
+for (const pessoa of pessoas) {
+    divListaObjForof.innerHTML += `${pessoas[i].nome}, ${pessoas[i].idade} R$ ${pessoas[i].renda.toFixed(2).replace('.', ',')} <br>`;
+}
+</script>
+</body>
+</html>

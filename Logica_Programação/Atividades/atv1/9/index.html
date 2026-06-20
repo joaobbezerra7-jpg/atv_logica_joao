@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        h3 {
+            text-align: center;
+        }
+
+        input, a {
+            display: block;
+        }
+
+
+        #div-form {
+            border: 3px solid;
+            width: 300px;
+            padding: 30px;
+            position: relative;
+            left: 300px;
+            top: 100px;
+        }
+
+        #div-resultado {
+            border: solid 2px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h6>Veja outras atividades</h6>
+    <a href="atv1.html">Atividade 1</a>
+    <a href="atv2.html">Atividade 2</a>
+    <a href="atv3.html">Atividade 3</a>
+    <a href="atv5.html">Atividade 5</a>
+    <a href="atv6.html">Atividade 6</a>
+    <a href="atv7.html">Atividade 7</a>
+    <a href="atv8.html">Atividade 8</a>
+    
+    <hr>
+    <h1>Questão 9</h1>
+    <hr>
+    <h3>
+        Um comerciante calcula o valor da venda dos produtos de
+        seu estabelecimento tendo em vista à tabela abaixo:
+        Valor da compra Valor da venda
+        Menor que de R$ 10,00 lucro de 70%
+        Entre R$10,00 e R$ 30,00 lucro de 50%
+        Entre R$30,00 e R$ 50,00 lucro de 40%
+        Maior R$50,00 lucro de 30%
+        
+        Elabore um o algoritmo que possa entrar com nome do produto
+        e valor da compra e imprima o nome do produto e o valor
+        da venda.
+        </h5>
+        <div id="div-form">
+            <h3>Verificador de lucro</h3>
+
+            <form id="calculadora">
+
+                <label for="pro">Digite nome do produto</label>
+                <input type="text" name="pro" id="pro">
+                <label for="pre">Digite o preço desse produto</label>
+                <input type="number" name="pre" id="pre">
+                
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+
+            
+            </form>
+            <br>
+            <div id="div-resultado">
+
+            </div>
+        </div>
+        <script src="script.js">
+            
+        </script>
+</body>
+
+</html>
