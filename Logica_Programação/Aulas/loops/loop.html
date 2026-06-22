@@ -53,55 +53,55 @@
 
 <script>
     // Repetir frases
-    // const inputFrase = document.querySelector('#frase');
-// const inputNumRepeticao = document.querySelector('#num-repeticao');
-// const btnFrase = document.querySelector('#btn-frase');
-// const divFrase = document.querySelector('#div-frase');
+    const inputFrase = document.querySelector('#frase');
+const inputNumRepeticao = document.querySelector('#num-repeticao');
+const btnFrase = document.querySelector('#btn-frase');
+const divFrase = document.querySelector('#div-frase');
 
-// btnFrase.addEventListener('click', () => {
-//     const frase = inputFrase.value;
-//     const repeticoes = Number(inputNumRepeticao.value);
+btnFrase.addEventListener('click', () => {
+    const frase = inputFrase.value;
+    const repeticoes = Number(inputNumRepeticao.value);
     
-//     divFrase.innerHTML = ''; 
+    divFrase.innerHTML = ''; 
 
-//     for (let i = 0; i < repeticoes; i++) {
-//         divFrase.innerHTML += `<p>${frase}</p>`;
-//     }
-// });
-
-
-
-//COLEÇÃO DE DADOS - ARRAY
-// const presentes = ['Bicicleta', 'Celular', 'Camisa do Mengão', 'Pulseira', 'Tênis Adidas']
-
-// const divArray = document.querySelector('#div-array');
-
-// for (let i = 0; i < 5; i++) {
-//     divArray.innerHTML += `${presentes[i]}, `
-// }
+    for (let i = 0; i < repeticoes; i++) {
+        divFrase.innerHTML += `<p>${frase}</p>`;
+    }
+});
 
 
-// Lendo dados com ForOF
-// const divForof = document.querySelector("#div-forof");
 
-// for (const obj of presentes) {
-//     divForof.innerHTML += ` ${obj}`
-// }
+// COLEÇÃO DE DADOS - ARRAY
+const presentes = ['Bicicleta', 'Celular', 'Camisa do Mengão', 'Pulseira', 'Tênis Adidas']
+
+const divArray = document.querySelector('#div-array');
+
+for (let i = 0; i < 5; i++) {
+    divArray.innerHTML += `${presentes[i]}, `
+}
+
+
+ //Lendo dados com ForOF
+const divForof = document.querySelector("#div-forof");
+
+for (const obj of presentes) {
+    divForof.innerHTML += ` ${obj}`
+}
 
 
 // Lendo dados com ForIn
-// const divForIn = document.querySelector('#div-for-in')
+const divForIn = document.querySelector('#div-for-in')
 
-// for (let posicao in presentes) {
-//    divForIn.innerHTML += `${presentes[posicao]}, `
-// }
+for (let posicao in presentes) {
+   divForIn.innerHTML += `${presentes[posicao]}, `
+}
 
 
-//Lendo com for each
-// const divForEach = document.querySelector("#div-foreach")
-// presentes.forEach((elemento, i) => {
-//     divForEach.innerHTML += `${i} - ${elemento} <br>`
-// })
+// Lendo com for each
+const divForEach = document.querySelector("#div-foreach")
+presentes.forEach((elemento, i) => {
+    divForEach.innerHTML += `${i} - ${elemento} <br>`
+})
 
 
 
