@@ -1,0 +1,44 @@
+/*
+
+seletor{
+    propriedade: valor;
+}
+
+*/
+
+h1{
+    text-align: center;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    line-height: 20px;
+}
+
+#parágrafo01{
+    border: solid 2px;
+}
+
+#parágrafo02{
+    background-color: blanchedalmond;
+}
+
+#parágrafo03{
+    font-size: 12px;
+}
+
+#parágrafo04{
+    border: dotted 2px;
+}
+
+#parágrafo05{
+    text-transform: lowercase;
+}
+
+.parágrafo{
+    text-decoration: line-through;
+}
