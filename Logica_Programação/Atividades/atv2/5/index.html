@@ -32,8 +32,26 @@
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>
             </select>
+            <br>
+            <button id="btn-total">Total de pessoas digitadas</button>
+            <br>
+            <button id="btn-mulherRenda">Quantidade de mulheres com renda entre 1000 e 3000</button>
+            <br>
+            <button id="btn-percentualMaior"> Percentual quem ganha mais que 2000</button>
+
         </form>
     </div>
+
+    <div id="resultado-total"></div>
+    <div id="resultado-mulheres"></div>
+    <div id="resultado-maisque"></div>
+
+    <script>
+        const form = document.querySelector("#form");
+        const resultadoTotal = document.querySelector("resultado-total");
+        const resultadoMulheres = document.querySelector("#resultado-mulheres")
+        const resultadoMaisque = document.querySelector("#resultado-maisque");
+    </script>
 
 
 </body>
