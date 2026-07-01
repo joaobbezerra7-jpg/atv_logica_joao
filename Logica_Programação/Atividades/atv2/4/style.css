@@ -2,6 +2,12 @@ input{
     display: block;
 }
 
+a{
+    display: block;
+    position: relative;
+    left: 920px;
+}
+
 #campos{
     position: relative;
     left: 40px;
@@ -17,9 +23,7 @@ input{
 
 }
 
-body{
-    background-color: antiquewhite;
-}
+
 
 #div-result-menor, #div-result-maior, #div-result-meio, #div-result-homem, #div-result-mulher{
     border: solid 3px;
